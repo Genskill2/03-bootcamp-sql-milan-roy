@@ -2,7 +2,7 @@ INSERT INTO publisher (name, country) VALUES ('PHI', 'India');
 INSERT INTO publisher (name, country) VALUES ('Harper', 'USA');
 INSERT INTO publisher (name, country) VALUES ('GCP', 'USA');
 INSERT INTO publisher (name, country) VALUES ('Avery', 'USA');
-INSERT INTO publisher (name, country) VALUES ('Dei Rey', 'UK');
+INSERT INTO publisher (name, country) VALUES ('Del Rey', 'UK');
 INSERT INTO publisher (name, country) VALUES ('Vintage', 'UK');
 
 INSERT INTO subjects (name) VALUES ('C');
@@ -21,7 +21,7 @@ INSERT INTO books (title, publisher) VALUES ('The UNIX Programming Environment',
 INSERT INTO books (title, publisher) VALUES ('Cryptonomicon', (SELECT id FROM PUBLISHER WHERE name='Harper'));
 INSERT INTO books (title, publisher) VALUES ('Deep Work', (SELECT id FROM PUBLISHER WHERE name='GCP'));
 INSERT INTO books (title, publisher) VALUES ('Atomic Habits', (SELECT id FROM PUBLISHER WHERE name='Avery'));
-INSERT INTO books (title, publisher) VALUES ('The City and The City', (SELECT id FROM PUBLISHER WHERE name='Dei Rey'));
+INSERT INTO books (title, publisher) VALUES ('The City and The City', (SELECT id FROM PUBLISHER WHERE name='Del Rey'));
 INSERT INTO books (title, publisher) VALUES ('The Great War for Civilisation', (SELECT id FROM PUBLISHER WHERE name='Vintage'));
 
 
